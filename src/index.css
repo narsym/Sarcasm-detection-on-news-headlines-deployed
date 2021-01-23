@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bold;
+  color: rgb(65, 67, 73);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
 }
+
+.background h1 {
+  margin-bottom: 2%;
+}
+
+.content {
+  width: 60vw;
+  height: 70vh;
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  flex-direction: column;
+}
+
+.search {
+  width: 100%;
+  height: 20%;
+  display:inline-block;
+  text-align:center; 
+}
+
+.content .search input {
+  width: 60%;
+  height: 50%;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));;
+  border: none;
+  border-radius: 2rem;
+  font-size: 120%;
+  color: blueviolet;
+  margin-right: 2%;
+}
+
+.content .search button {
+  width: 20%;
+  height: 50%;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+  border: none;
+  border-radius: 2rem;
+  font-size: 120%;
+  color: blueviolet;
+}
+
+.content .search button:hover {
+  background-color: royalblue;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
