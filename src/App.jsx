@@ -13,7 +13,9 @@ const App = () => {
         try{
         const url = `https://mlmodelsapi.herokuapp.com/sarcasm?headline=${headline}`;
         axios.get(url,{
-            mode: 'nocors'
+            header: {
+                'Access-Control-Allow-Origin': '*'
+            }
         })
         .then(res=>{
             console.log(res);

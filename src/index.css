@@ -65,13 +65,24 @@
   cursor: pointer;
 }
 
-@media(max-width: 768px) {
-  .search {
+@media screen and (max-width: 768px) {
+  .content .search{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+  .content .search input {
+    width: 80%;
+    margin-right: auto;
+    margin-bottom: 2%;
+  }
+  .content .search button {
+    width: 40%;
   }
 }
+
+
 
 
 
